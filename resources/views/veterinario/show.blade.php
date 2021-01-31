@@ -5,7 +5,7 @@
 
 <ul class="list-group list-group-flush">
     <li class="list-group-item"><b>Nome:</b> {{$veterinario['nome']}}</li>
-    <li class="list-group-item"><b>Descrição:</b> {{$veterinario['crmv']}}</li>
+    <li class="list-group-item"><b>CRMV:</b> {{$veterinario['crmv']}}</li>
     <li class="list-group-item"><b>Especialidade:</b> {{$veterinario->especialidade->nome}}</li>
 
     <li class="list-group-item">

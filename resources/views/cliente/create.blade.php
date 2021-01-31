@@ -9,7 +9,7 @@
         <div class="form-group">
             <div class='row'>
                 <div class='col-sm-6'>
-                    <label>Cliente</label>
+                    <label>Nome</label>
                     <input type="text" class="form-control" name="nome" value="{{old('nome')}}">
                 </div>
                 <div class='col-sm-6'>
