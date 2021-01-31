@@ -34,6 +34,7 @@ class VeterinarioController extends Controller
             'especialidade_id' => $request->especialidade
         ]);
         
+
         return redirect()->route('veterinario.index');
     }
 
@@ -55,9 +56,6 @@ class VeterinarioController extends Controller
         $especialidade = Especialidade::all();
 
         return view('veterinario.edit', ['dados' => $dados, 'especialidade' => $especialidade]);
-
-
-
        
     }
 
@@ -65,6 +63,7 @@ class VeterinarioController extends Controller
     public function update(Request $request, $id)
     {
         $veterinario = Veterinario::find($id);
+
         $veterinario->fill([
 
             'nome' => $request->nome,

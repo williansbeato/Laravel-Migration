@@ -21,9 +21,9 @@
                 <div class="col-sm-5">
                     <div class="form-group">
                         <label class="font-weight-bold">Especialidade</label>
-                        <select class="form-control" name="especialidades" id="especialidades">
+                        <select class="form-control" name="especialidade">
                             @foreach( $especialidade as $item )
-                                <option value="{{ $item['id'] }}" ><p> {{ $item['nome']}} </p></option>
+                                <option value="{{ $item['id'] }}"><p> {{ $item['nome']}} </p></option>
                             @endforeach
                         </select>
                     </div>

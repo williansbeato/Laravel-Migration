@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>SGM - @yield('titulo')</title>
+        <title>VetClin @yield('titulo')</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
@@ -29,7 +29,7 @@
                     </li>
                     <li @if($tag=="ESP") class="nav-item active" @else class="nav-item" @endif>
                         <a class="nav-link" href="{{ route('especialidade.index') }}">
-                            <b>Especialidade</b>
+                            <b>Especialidades</b>
                         </a>
                     </li>
                 </ul>
