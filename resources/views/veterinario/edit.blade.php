@@ -14,18 +14,20 @@
             <div class="col-sm-6">
                 <div class="form-group">
                     <label class="font-weight-bold" >CRMV</label>
-                    <input type="text" name="crmv" class="form-control" value="{{ $dados['nome']}}">
+                    <input type="text" name="crmv" class="form-control" value="{{ $dados['crmv']}}">
 
                 </div>
             </div>
 
             <div class='col-sm-5'>
                 <label>Especialidade</label>
-                <select class="form-control" name="especialidade">
+                <select class="form-control" name="especialidade" id="especialidade"">
                     @foreach( $especialidade as $item )
-                        <option value="{{ $item['id'] }}"><p> {{ $item['nome']}} </p></option>
+                    <option value="{{ $item['id'] }}" @if($dados['especialidade_id'] == $item['id']) selected @endif><p> {{ $item['nome']}} </p></option>
                     @endforeach
                 </select>
+
+            
 
             </div>
             
