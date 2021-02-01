@@ -7,15 +7,15 @@
 <form action = "{{ route('especialidade.store') }}" method = "POST">
         @csrf
         <div class="form-group">
-            <div class='row'>
-                <div class='col-sm-6'>
-                    <label>Nome</label>
-                    <input type="text" class="form-control" name="nome" value="{{old('nome')}}">
-                </div>
-                <div class='col-sm-6'>
-                    <label>Descrição</label>
-                    <textarea type="text" class="form-control" name="descricao" value="{{old('descricao')}}"></textarea>
-                </div>
+            <label class="font-weight-bold">Nome</label>
+            <input type="text" class="form-control" name="nome" value="{{old('nome')}}">
+        </div>
+
+        <div class="row">  
+            <div class='col-sm-6'>
+                <label>Descrição</label>
+                <textarea type="text" class="form-control" name="descricao" value="{{old('descricao')}}"></textarea>
+            </div>
                
                 
             </div>

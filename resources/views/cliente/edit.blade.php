@@ -10,14 +10,14 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <label class="font-weight-bold" >E-mail</label>
                     <input type="text" name="email" class="form-control" value="{{ $cliente['email'] }}">
                    
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <label class="font-weight-bold">Telefone</label>
                     <input type="text" name="telefone" class="form-control" value="{{ $cliente['telefone'] }}">

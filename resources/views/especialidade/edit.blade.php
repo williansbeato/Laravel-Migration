@@ -10,11 +10,10 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-6">
                 <div class="form-group">
                     <label class="font-weight-bold" >Descrição</label>
                     <textarea type="text" name="descricao" class="form-control">{{ $especialidade['descricao'] }}</textarea>
-
                 </div>
             </div>
             
